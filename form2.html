@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            form{
+                background-color: #d5c4ff;
+                /* width: 30%; */
+                padding-bottom: 40px;
+            }
+            .login{
+                /* justify-content: center; */
+                /* align-items: center; */
+                text-align: center;
+                padding: 5px;
+                color: red;
+            }
+            .center{
+                justify-content: center;
+                text-align: center;
+                margin:  auto;
+            }
+            .title{
+                width: 100px;
+                margin: 2px;
+            }
+            .inputField{
+               padding:  0;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .checkboxField{
+                transform: translate(-120px,0);
+            }
+            button{
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" name="f1" method="post">
+            <div class="login">
+                <h1 >Ví dụ về tạo form</h1>
+            </div>
+            <div class="center">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title">Text box</h4>
+                            </td>
+                            <td>
+                                <input type="text" class="inputField">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="title">Text Area</h4>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="20" rows="2"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="title">File box </h4>
+                            </td>
+                            <td>
+                                <input type="text" class="inputField">
+                            </td>
+                            <td>
+                                <button type="submit">Browse</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="center checkboxField">
+                <input type="radio" name="radioButton" id="">Radio Button
+                    <br>
+                    <input type="checkbox" name="checkbox" id="">checkbox
+                    <br>
+                <button type="submit">Submit</button>
+                <button type="submit">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>

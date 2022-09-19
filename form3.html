@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <style>
+        .main {
+            padding: 0px 50px;
+        }
+
+        .search {
+            border-radius: 100%;
+            float: right;
+        }
+
+        .intro {
+            width: 100%;
+            /* display: flex; */
+        }
+
+        #nav {
+            display: inline-block;
+            width: 100%;
+            padding-left: 0;
+        }
+
+        #nav>li {
+            display: inline-block;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        #headerbar {
+            padding: 10px;
+        }
+
+        #nav>li>a {
+            color: rgb(48, 29, 29);
+            text-decoration: none;
+            line-height: 50px;
+            padding: 0px 10px;
+            font-size: 18px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .leftBox {
+            width: 25%;
+        }
+
+        .leftNav>li>a {
+            color: black;
+            text-decoration: none;
+            list-style-type: none;
+            font-weight: 600;
+            /* padding: 5px 3px; */
+        }
+
+        .leftNav>li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            text-decoration: none;
+            border-bottom: 1px dashed #ccc;
+            padding: 6px;
+            margin: 0px 20px 10px;
+        }
+
+        .title {
+            padding: 5px 20px 10px;
+            border-bottom: 1px solid #ccc;
+            color: blueviolet;
+        }
+
+
+        .leftNav {
+            /* width: 100%; */
+            padding-left: 0;
+            border: 1px solid #ccc;
+        }
+
+        .rightBox {
+            width: 70%;
+            margin-left: 50px;
+            padding-top: 15px;
+            border: 0px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .title2 {
+            color: black;
+        }
+
+        .img-news {
+            width: 140px;
+            height: 120px;
+        }
+
+        .news {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            height: 140px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .sub-content {
+            margin-left: 30px;
+        }
+
+
+        .time {
+            font-size: 12px;
+            color: #ccc;
+            margin: 5px 10px;
+        }
+
+        .title-news {
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0px;
+        }
+
+        .description {
+            margin: 5px 0px;
+        }
+    </style>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="intro">
+            <img src="./img/logo-k_cntt.png" alt="">
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm thông tin">
+            </div>
+        </div>
+        <div id="headerbar">
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Tuyển sinh</a></li>
+                <li><a href="">Đào tạo</a></li>
+                <li><a href="">Nghiên cứu khoa học</a></li>
+                <li><a href="">Hợp tác</a></li>
+                <li><a href="">Sinh viên</a></li>
+                <li><a href="">Cựu sinh viên</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="./img/Slider_KhoaCNTT_KN40namCB.jpg" alt="" height="300px" width="100%">
+        </div>
+        <div class="content">
+            <div class="leftBox">
+                <ul class="leftNav">
+                    <h3 class="title">K.Công nghệ thông tin</h3>
+                    <li><a href="ThongBao.html" target="content">Thông báo</a></li>
+                    <li><a href="Tintuc.html" target="content">Tin tức hoạt động</a></li>
+                    <li><a href="DaoTaoDaiHoc.html" target="content">Đào tạo đại học</a></li>
+                    <li><a href="DaoTaoSauDaiHoc.html" target="content">Đào tạo sau đại học</a></li>
+                    <li><a href="NghienCuuKhoaHoc.html" target="content">Nghiên cứu khoa học</a></li>
+                    <li><a href="BieuMauCuaKhoa.html" target="content">Biễu mẫu của khoa</a></li>
+                    <li><a href="">Gợi ý với khoa</a></li>
+                </ul>
+            </div>
+            <iframe border="0" name="content" src="ThongBao.html" class="rightBox" scrolling=no
+                onload="resizeIframe(this)">
+        </div>
+    </div>
+</body>
+
+
+</html>
